@@ -28,6 +28,28 @@
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 
+% // Licenca Creative Commons
+% // Circuitos Integrados e Sistemas Embarcados - Relatorio Final de 
+% // Gustavo Esteves, Joao Ferreira, Kadna Maria e Sergio Mendonca
+% // esta licenciado com uma Licenca Creative Commons
+% // Atribuicao-NaoComercial-CompartilhaIgual 4.0 Internacional.
+% // Baseado no trabalho disponivel em https://github.com/sftom/ee1054
+% //
+% // +---------------------------------------------------+
+% // | Universidade Federal de Pernambuco                |
+% // | Programa de Pos-graduacao em Engenharia Eletrica  |
+% // +---------------------------------------------------+
+% // +---------------------------------------------------+
+% // | EE1054 Circuitos Integrados e Sistemas Embarcados |
+% // | Turma 2015.1                                      |
+% // +---------------------------------------------------+
+% //  Alunos em ordem alfabetica:
+% //  > Gustavo Ribeiro Porpino Esteves
+% //  > Joao Ferreira da Silva Junior
+% //  > Kadna Maria Alves Camboim Vale
+% //  > Sergio Francisco Tavares de Oliveira Mendonca
+% // +---------------------------------------------------+
+
 \documentclass[
 	% -- opções da classe memoir --
 	12pt,				% tamanho da fonte
@@ -211,7 +233,7 @@
         \vspace{.5cm}
         {{\Large Relatório Final}}\\
         \vspace{1cm}
-        {{\large Versão: 1.0.0}}\\
+        {{\large Versão: 1.0.1}}\\
         \vfill
 
         Universidade Federal de Pernambuco\\
@@ -231,14 +253,11 @@
         Recife, 27 de julho de 2015
         \end{center}
 
-
-
 \newpage
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
-%%% Dados da Criação/Autorização/Reconhecimento do Curso
+%%% Licença deste conteúdo
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -256,26 +275,23 @@ Com o objetivo de promovermos ampla divulgação e possibilitar a participação
 
 \noindent Circuitos Integrados e Sistemas Embarcados - Relatório Final de Gustavo Esteves, João Ferreira, Kádna Maria e Sérgio Mendonça está licenciado com uma Licença Creative Commons --  Atribuição (BY) -- Não Comercial (NC) -- Compartilha Igual (SA) 4.0 Internacional. Baseado no trabalho disponível em \url{https://github.com/sftom/ee1054}.
 
-\hfill \noindent A equipe.
+\hfill A equipe.
 
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
-%%% Comissão de Elaboração da Reforma Curricular do Curso
+%%% Comissão de Elaboração e Resolução das Atividades
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter*[Equipe de Elaboração e \\Resolução das Atividades]{Equipe de Elaboração e \\Resolução das Atividades}
 \addcontentsline{toc}{chapter}{Equipe de Elaboração e Resolução das Atividades}
 
-
 \section*{Elaboração das Atividades}
 
 \noindent Prof. Marco Aurélio Benedetti Rodrigues\\
 \url{http://lattes.cnpq.br/2448324832915432}\\
-
-
 
 \section*{Estudantes --- Execução das Atividades}
 
@@ -345,8 +361,6 @@ Com o objetivo de promovermos ampla divulgação e possibilitar a participação
 \cleardoublepage
 % ---
 
-
-
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
@@ -355,6 +369,16 @@ Com o objetivo de promovermos ampla divulgação e possibilitar a participação
 % ----------------------------------------------------------
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% chapter: Introdução
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter*[Introdução]{Introdução}
 \addcontentsline{toc}{chapter}{Introdução}
 % ----------------------------------------------------------
@@ -386,16 +410,20 @@ A disciplina de Circuitos Integrados e Sistemas Embarcados tem como ementa a an�
 \section*{Organização deste Relatório} % (fold)
 \label{sec:organizacao_deste_relatorio}
 
-Este relatório final apresenta as atividades realizadas ao longo da Disciplina de Circuitos Integrados e Sistemas Embarcados. Foram desenvolvidas oito atividades, cada uma com propósito específico para determinado tipo de microcontrolador ou placa. Para cada atividade são apresentadas as questões propostas, a resolução de cada uma delas, bem como os códigos em linguagem de programação e algumas considerações. O presente relatório está organizado da seguinte forma: a atividade 1 trata do microcontrolador MCS51, a atividade 2 é sobre o microcontrolador Atmel AT89S51, a atividade 3 apresenta o microcontrolador PIC, a atividade 4 vem com o microcontrolador MSP-430, na atividade 5 temos o microcontrolador MSP430-GRACE, na atividade 6 é apresentado o microcontrolador Kinetis Freescale, já nas atividades 7 e 8 são apresentadas as placas Raspberry Pi B+ e Intel Galileo, respectivamente.
+Este relatório final apresenta as atividades realizadas ao longo da Disciplina de Circuitos Integrados e Sistemas Embarcados. Foram desenvolvidas oito atividades, cada uma com propósito específico para determinado tipo de microcontrolador ou placa. Para cada atividade são apresentadas as questões propostas, a resolução de cada uma delas, bem como os códigos em linguagem de programação e algumas considerações. O presente relatório está organizado da seguinte forma: a atividade 1 trata do microcontrolador MCS51, a atividade 2 é sobre o microcontrolador Atmel AT89S51, a atividade 3 apresenta o microcontrolador PIC, a atividade 4 vem com o microcontrolador MSP-430, na atividade 5 temos o microcontrolador MSP430-Grace, na atividade 6 é apresentado o microcontrolador Kinetis Freescale, já nas atividades 7 e 8 são apresentadas as placas Raspberry Pi B+ e Intel Galileo, respectivamente.
 
 Com o objetivo de colaborar com a comunidade, também disponibilizamos todo o material desenvolvido no GitHub.com, disponível em \url{https://github.com/sftom/ee1054}, para que estes possam servir de orientações e desenvolvimento de estudantes e profissionais da área.
 
 % section organizacao_deste_relatorio (end)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% chapter: Trabalho I - Família MCS51
+% chapter 1: Trabalho I - Família MCS51
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Microcontrolador MCS51} % (fold)
@@ -451,7 +479,7 @@ Com o objetivo de colaborar com a comunidade, também disponibilizamos todo o ma
 
 Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado na Figura~\ref{fig:datasheet-cap1-2}, extraída do Data Sheet do MCS51. \cite{Corporation2000}.
 
-Podemos observar um fluxo do programa na Figura~\ref{fig:cha-1-fluxograma}, com a ideia de melhorar o entendimento do programa, e a partir deste, construir o código em Linguagem C.
+Podemos observar um fluxo do programa na Figura~\ref{fig:cha-1-fluxograma}, com a ideia de melhorar o entendimento do programa, e a partir deste, em seguida, construir um pseudocódigo, e posteriormente, construir o código em Linguagem C.
 
 \begin{figure}[H]
   \centering  
@@ -471,39 +499,29 @@ Podemos observar um fluxo do programa na Figura~\ref{fig:cha-1-fluxograma}, com 
 
 \newpage
 
-Os pseudocódigos elaborados estão disponibilizados a seguir:
+Os pseudocódigos foram elaborados a partir da aplicação VisuAlg\footnote{VisuAlg (download): \url{http://www.apoioinformatica.inf.br/produtos/visualg}}, programa que edita, interpreta e executa algoritmos com uma linguagem próxima do português estruturado como um programa normal de computador. É um programa de livre uso e distribuição, empregado no ensino de programação em várias escolas e universidades no Brasil e no exterior. A seguir, disponibilizamos os pseudocódigos para consulta.
 
+% ----------------------------------------------------------
 \section*{Microcontrolador MCS51 80C51 -- A01 (Pseudocódigo)}
 \subsection*{A01Q06a}
 \lstinputlisting{sources/EE1054-Atividade01-6A.alg}
-
+% ----------------------------------------------------------
 \subsection*{A01Q06b}
 \lstinputlisting{sources/EE1054-Atividade01-6B.alg}
-
+% ----------------------------------------------------------
+,
 % section considerações (end)
 
 % chapter cha:Trab-1-Familia-MCS51 (end)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % chapter 2: Microcontrolador ATMEL AT89S51
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Microcontrolador ATMEL AT89S51}% (fold)
@@ -539,7 +557,7 @@ A seguir, podemos visualizar uma imagem do microcontrolador MCS51 utilizado para
   \includegraphics[width=0.4\textwidth]{images/Atividade02/Atividade-02-03-Microcontrolador-KL_Intel_P8051.jpg}
 \end{figure}
 
-Para essa atividade foi utilizado o Reads51 que permite simular as entradas e saídas do controlador través de botões mostrados na Figura~\ref{fig:Reads51-teste-C}.
+Para essa atividade foi utilizado a IDE Reads51\footnote{Reads51 (download): \url{http://www.rigelcorp.com/reads51.htm}} que permite simular as entradas e saídas do controlador através de botões mostrados na Figura~\ref{fig:Reads51-teste-C}.
 
 \begin{figure}[ht]
   \centering  
@@ -564,8 +582,6 @@ A gravação dos códigos desenvolvidos no MCS51 é realizada através de um gra
 
 Conforme solicitado na Atividade~\ref{cha:2-ATMEL-AT89S51} foi necessária a utilização de uma placa de circuito cedida para as equipes, que continha os componenetes que seria utilizados, como por exemplo, botões e LED's. O Diagrama Esquemático das ligações realizadas na placa pode ser observado na Figura~\ref{fig:Atividade-02-05-Schematic-01}.
 
-
-
 Como trabalhamos, teoricamente, no mesmo microcontrolador da Atividade~\ref{cha:1-Familia-MCS51}, inserimos novamente o Diagrama de Bloco, como pode ser observado na Figura~\ref{fig:datasheet-cap1-2}, extraída do Data Sheet do Atmel AT89S51. \cite{Corporation2000}.
 
 \newpage
@@ -581,33 +597,24 @@ Como trabalhamos, teoricamente, no mesmo microcontrolador da Atividade~\ref{cha:
 
 Os códigos-fontes elaborados estão disponibilizados a seguir:
 
+% ----------------------------------------------------------
 \section*{Microcontrolador ATMEL AT89S51 -- A02 (Códigos-fontes)}
 \subsection*{A02Q01}
-
+% ----------------------------------------------------------
 \lstinputlisting{sources/EE1054-Atividade02.c}
-
+% ----------------------------------------------------------
 % section considerações_finais (end)
 
 % chapter ATMEL-AT89S51 (end)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % chapter 3: Microcontrolador PIC
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Microcontrolador PIC18F4550}% (fold)
@@ -639,7 +646,7 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \begin{figure}[ht]
   \centering
   \caption{\label{fig:03MicrocontrollerPIC_18F4550}Microcontrolador PIC18F4550.} 
-  \includegraphics[width=0.4\textwidth]{images/Atividade03/03MicrocontrollerPIC_18F4550.jpg}
+  \includegraphics[width=0.4\textwidth]{images/Atividade03/PicPROTOn-45o-450-2-450px.jpg}
 \end{figure}
 
 \begin{figure}[ht]
@@ -649,25 +656,21 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
   \includegraphics[width=0.9\textwidth]{images/Atividade03/Atividade-03-05-Schematic-01-recortado.png}
 \end{figure}
 
-\begin{itemize}
-  \item Realizamos a instalação do ProtoN Compiler\footnote{ProtoN Compiler: \url{https://github.com/sftom/ee1054/ide/311-InstallPROTOn.exe}}, e seguimos alguns passos do manual de utilização\footnote{Manual do ProtoN Compiler: \url{https://github.com/sftom/ee1054/ide/311-ManualPROTOn.pdf}};
-  \item Em seguida, realizamos a instalação do MikroC Pro PIC 2014\footnote{MikroC Pro PIC 2014\url{https://github.com/sftom/ee1054/ide/312-mikroC_PRO_PIC_2014_Build.6.4.0.exe}} e manual de utilização\footnote{Manual do MikroC Pro PIC 2014\url{https://github.com/sftom/ee1054/ide/312-ManualMikroc-pro-pic.pdf}};
-  \item Como pedido na atividade foi utilizado o MicroC e a PROTOn;
-\end{itemize}
+Como pedido na atividade foi utilizado o MikroC e a \textsc{PROTO'n} a partir da instalação do Compilador \textsc{PROTO'n}, executando alguns passos do Manual \textsc{PROTO'n}, além do Bootloader \textsc{PROTO'n} e Exemplos-MikroC-\textsc{PROTO'n}, todos disponíveis no SmartRadio\footnote{SmartRadio: \url{http://www.smartradio.com.br/pic/PROTON}}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \caption{\label{fig:cha-3-mikroC-Pro00}Programação em IDE MikroC.}
   \includegraphics[width=0.8\textwidth]{images/Atividade03/mikroC-PRO00.png}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \caption{\label{fig:cha-3-mikroC-Pro01}Configuração do microcontrolador na IDE MikroC.}
-  \includegraphics[width=0.8\textwidth]{images/Atividade03/mikroC-PRO00.png}
+  \includegraphics[width=0.8\textwidth]{images/Atividade03/mikroC-PRO01.png}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \caption{\label{fig:cha-3-PROTOn-BOOTLOADER}Configuração do Bootloader na aplicação \textsc{PROTO'n}.}
   \includegraphics[width=0.8\textwidth]{images/Atividade03/PROTOn-BOOTLOADER.png}
@@ -692,7 +695,6 @@ Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado n
   \includepdf[pages=12,frame=true,width=0.95\textwidth,pagecommand={}]{datasheets/A4-A3-02Datasheet-39632e.pdf}
 \end{figure}
 
-
 \newpage
 
 Os códigos-fontes elaborados estão disponibilizados a seguir:
@@ -703,27 +705,24 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 % ----------------------------------------------------------
 \subsection*{A03Q02}
 \lstinputlisting{sources/EE1054-Atividade03-Questao02-Led.c}
-
+% ----------------------------------------------------------
 \subsection*{A03Q03}
 \lstinputlisting{sources/EE1054-Atividade03-Questao03-Leds-Sequencial.c}
-
-
-
+% ----------------------------------------------------------
 
 % section considerações_finais (end)
 
 % chapter PIC (end)
 
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% chapter: Microcontrolador MSP430
+% chapter 4: Microcontrolador MSP430
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Microcontrolador MSP430}% (fold)
 \label{cha:4-MSP430}
@@ -736,7 +735,7 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \subsubsection*{Atividade 4}
 
 \begin{enumerate}
-  \item Instalar o compilador Code Composer Studio (CCS) Integrated Development Environment (IDE\footnote{\url{http://www.ti.com/tool/ccstudio-msp}}) for MSP Microcontrollers.
+  \item Instalar o compilador Code Composer Studio (CCS) Integrated Development Environment (IDE) for MSP Microcontrollers.
   \item Realizar testes para piscar LEDs com a placa LAunchPad MSP-exp430G2 e também com a placa eZ430-RF2500T.
   \item Fazer um programa para ler um sinal proveniente de dois botões externos a placa e realizar o acionamento de 4 LEDs, conforme a tabela abaixo (escolher qualquer uma das placas), conforme a Tabela~\ref{Table:MSP430}:
   \begin{table}[h]
@@ -762,6 +761,8 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \section{Relatório da Atividade} % (fold)
 \label{sec:consideracoes}
 
+Realizamos a instalação do compilador Code Composer Studio\footnote{Code Composer Studio (download): \url{http://www.ti.com/tool/ccstudio-msp}} (CCS) Integrated Development Environment (IDE) for MSP Microcontrollers. Podemos observar o desenvolvimento do código na Figura~\ref{fig:cha-4-CodeComposer00}.
+
 Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado na Figura~\ref{cha:4-diagrama-bloco-microcontrolador}, extraída do Data Sheet do MSP430. \cite{Instruments2012}.
 
 \begin{figure}[!ht]
@@ -769,7 +770,6 @@ Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado n
   \caption{\label{fig:03e04MicrocontroladorEZ430-RF2500T}Microcontrolador EZ430-RF2500T e seu Gravador de Firmware.}  
   \includegraphics[width=0.6\textwidth]{images/Atividade04/03e04MicrocontroladorEZ430-RF2500T.jpg}
 \end{figure}
-
 
 \begin{figure}[ht]
   \centering
@@ -801,43 +801,49 @@ Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado n
 \newpage
 
 Os códigos-fontes elaborados estão disponibilizados a seguir:
+
 % ----------------------------------------------------------
 \section*{Microcontrolador MSP430 -- A04 (Códigos-fontes)}
 \label{sec:MSP430-A04Q04}
 % ----------------------------------------------------------
 \subsection*{A04Q04}
 \lstinputlisting{sources/EE1054-Atividade04-Questao04-Pulso.c}
+% ----------------------------------------------------------
 
 % section considerações (end)
 
 % chapter PIC (end)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% chapter Microcontrolador MSP430 -- GRACE
+% chapter 5: Microcontrolador MSP430 -- Grace
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Microcontrolador MSP430 -- GRACE} % (fold)
+\chapter{Microcontrolador MSP430 -- Grace} % (fold)
 \label{cha:5-msp430_grace}
 
 \section{Atividades propostas} % (fold)
 \label{sec:msp430_grace-atividades_propostas}
 
-\subsection*{Relatório de Experimentos -- Aula prática com MSP430 -- GRACE}
+\subsection*{Relatório de Experimentos -- Aula prática com MSP430 -- Grace}
 
 \subsubsection*{Atividade 5}
 
 \begin{enumerate}
-  \item Instalar a fermenta de desenvolvimento GRACE para a família MSP430 (disponível do site da Texas).
-  \item Escolher um microcontrolador da família MSP430 que possua pelo menos um conversor A/D de 10 bits, interface de I/O para periféricos, memória do tipo flash e comunicação serial assíncrona do tipo RS232. Criar um software compatível no CCS, utilizando o GRACE, com as seguintes características:
+  \item Instalar a fermenta de desenvolvimento Grace para a família MSP430 (disponível do site da Texas).
+  \item Escolher um microcontrolador da família MSP430 que possua pelo menos um conversor A/D de 10 bits, interface de I/O para periféricos, memória do tipo flash e comunicação serial assíncrona do tipo RS232. Criar um software compatível no CCS, utilizando o Grace, com as seguintes características:
   \begin{enumerate}
     \item Configurar o conversor A/D para realizar a aquisição de dois canais, com uma taca de 100 amostras por segundo.
     \item Realizar a conversão de 100 amostras, em cada canal.
     \item Gravar as 100 amostras, de cada canal em uma memória FLASH.
     \item Recuperar as 100 amostras, por canal, gravadas na memória FLASH e enviar via comunicação serial, padrão RS232 a uma velocidade de 9600 baunds, para um periférico externo.
   \end{enumerate}
-  \item Apresentar um programa completo com as especificações do item 2, com os referidos comentários de como foi realizado todo o processo. Dica: gerar os códigos com o GRACE e posteriormente chamá-los com uma função através do programa principal, construído no CCS.
+  \item Apresentar um programa completo com as especificações do item 2, com os referidos comentários de como foi realizado todo o processo. Dica: gerar os códigos com o Grace e posteriormente chamá-los com uma função através do programa principal, construído no CCS.
 \end{enumerate}
 
 % section atividades_propostas (end)
@@ -845,31 +851,33 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \section{Relatório da Atividade} % (fold)
 \label{sec:msp430_grace-consideracoes}
 
-Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado na Figura~\ref{fig:cha-5-diagrama-bloco}, extraída do Data Sheet do MSP430F2272 (GRACE). \cite{Instruments2012}.
+Realizamos a instalação da ferramenta Grace\footnote{Grace (download): \url{http://www.ti.com/tool/grace}} -- Graphical Peripheral Configuration Tool, para a realização da prática. As atividades desenvolvidas podem ser observadas nas Figuras~\ref{fig:APP-Grace00}, \ref{fig:APP-Grace01} e \ref{fig:APP-Grace02}.
+
+Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado na Figura~\ref{fig:cha-5-diagrama-bloco}, extraída do Data Sheet do MSP430F2272 (Grace). \cite{Instruments2012}.
 
 \begin{figure}[ht]
   \centering
-  \caption{\label{fig:Atividade-05-05-Schematic-01}Diagrama Esquemático desenvolvido para o MSP430F2272 (GRACE) durante a Atividade~\ref{cha:5-msp430_grace}.}
+  \caption{\label{fig:Atividade-05-05-Schematic-01}Diagrama Esquemático desenvolvido para o MSP430F2272 (Grace) durante a Atividade~\ref{cha:5-msp430_grace}.}
   \fonte{Produzido pelos autores.}
   \includegraphics[width=0.8\textwidth]{images/Atividade05/Atividade-05-05-Schematic-01-recortado.png}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \caption{\label{fig:APP-GRACE00}Programação da MSP430F2272 na IDE GRACE (ambiente de simulação).}
-  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-GRACE00.png}
+  \caption{\label{fig:APP-Grace00}Programação da MSP430F2272 na IDE Grace (ambiente de simulação).}
+  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-Grace00.png}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \caption{\label{fig:APP-GRACE01}Programação da MSP430F2272 na IDE GRACE (ambiente de simulação).}
-  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-GRACE01.png}
+  \caption{\label{fig:APP-Grace01}Programação da MSP430F2272 na IDE Grace (ambiente de simulação).}
+  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-Grace01.png}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \caption{\label{fig:APP-GRACE02}Programação da MSP430F2272 na IDE GRACE (ambiente de simulação).}
-  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-GRACE02.png}
+  \caption{\label{fig:APP-Grace02}Programação da MSP430F2272 na IDE Grace (ambiente de simulação).}
+  \includegraphics[width=0.8\textwidth]{images/Atividade05/APP-Grace02.png}
 \end{figure}
 
 \newpage
@@ -887,24 +895,26 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \label{sec:GraceA05Q03}
 % ----------------------------------------------------------
 \subsection*{A05Q02-03}
-
+% ----------------------------------------------------------
 \lstinputlisting{sources/EE1054-Atividade05-adc_flash_serial.c}
-
+% ----------------------------------------------------------
 \lstinputlisting{sources/EE1054-Atividade05-BCSplus_init.c}
-
+% ----------------------------------------------------------
 \lstinputlisting{sources/EE1054-Atividade05-USCI_A0_init.c}
-
-
+% ----------------------------------------------------------
 
 % section considerações_finais (end)
 
 % chapter microcontrolador_msp430_grace (end)
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% chapter: Microcontrolador Kinetis Freescale
+% chapter 6: Microcontrolador Kinetis Freescale
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Microcontrolador Kinetis Freescale FRDM-KL25Z} % (fold)
@@ -933,7 +943,7 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 Nessa atividade foi escolhido elaborar os códigos a partir do compilador Mbed. Para isso é preciso gravar o bootload adequado na FRDM KL25, ou seja, colocar a FRDM KL25 em modo de gravação de bootload segurando o botão entre seus conectores, plugar a placa a um PC através do conector SDA e passar o arquivo. Após isso os códigos podem ser elaborados diretamente no site da Mbed que possui um compilador web que gera os arquivos a serem gravados na FRDM KL25 através da conexão USB como se estivesse passando arquivos para um Pendrive.
 
-O passo a passo da gravação do bootload da Mbed pode ser encontrado em seu site próprio\footnote{\url{https://developer.mbed.org/handbook/mbed-FRDM-KL25Z-Getting-Started}}.
+No site\footnote{Mbed FRDM-KL25Z: \url{https://developer.mbed.org/handbook/mbed-FRDM-KL25Z-Getting-Started}} da Mbed, encontramos um passo a passo para realizarmos a gravação do Bootload da Mbed.
 
 Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado na Figura~\ref{fig:cha-6-diagrama-bloco-freescale}, extraída do Data Sheet do Kinetis Freescale. \cite{FreescaleSemiconductor2013}.
 
@@ -965,28 +975,35 @@ Para fonte de consulta, inserimos o Diagrama de Bloco, como pode ser observado n
 \end{figure}
 
 \newpage
+
 Os códigos-fontes elaborados estão disponibilizados a seguir:
+
 % ----------------------------------------------------------
 \section*{Microcontrolador Kinetis Freescale -- A06 (Códigos-fontes)}
 \label{sec:Kinetis-Freescale-A06Q01-a}
 % ----------------------------------------------------------
 \subsection*{A06Q01-a}
 \lstinputlisting{sources/EE1054-Atividade06-Questao01a-Led.cpp}
-
+% ----------------------------------------------------------
 \subsection*{A06Q01-b}
 \lstinputlisting{sources/EE1054-Atividade06-Questao01b-Timer.cpp}
-
+% ----------------------------------------------------------
 \subsection*{A06Q01-c}
 \lstinputlisting{sources/EE1054-Atividade06-Questao01c-Touch.cpp}
+% ----------------------------------------------------------
 
 % section considerações_finais (end)
 
 % chapter microcontrolador_kinetis_freescale (end)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% chapter: Placa Raspberry Pi B+
+% chapter 7: Placa Raspberry Pi B+
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Placa Raspberry Pi B+} % (fold)
@@ -1014,7 +1031,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
   \item Anexo com todos os códigos desenvolvidos nos trabalhos (todos os códigos fontes).
   \item Gravação do material em um DVD, identificando os componentes do grupo.
 \end{enumerate}
-
 
 % section atividades_propostas (end)
 
@@ -1045,6 +1061,7 @@ Para fonte de consulta, inserimos o Diagrama Pinout da Placa Raspberry Pi B+, co
 \end{figure}
 
 \newpage
+
 %inserindo algumas páginas: 1 até 7, depois 50 e 57
 \begin{figure}[H]
   \centering
@@ -1060,50 +1077,61 @@ Para fonte de consulta, inserimos o Diagrama Pinout da Placa Raspberry Pi B+, co
   \includegraphics[width=0.8\textwidth]{images/Atividade07/IDLE.png}
 \end{figure}
 
-
 \newpage
+
 Os códigos-fontes elaborados estão disponibilizados a seguir:
+
 % ----------------------------------------------------------
 \section*{Placa Raspberry Pi -- A07 (Códigos-fontes)}
 \label{sec:RaspberryPi-A07Q02}
 % ----------------------------------------------------------
 \subsection*{A07Q02}
 \lstinputlisting{sources/EE1054-Atividade07-Questao02-Print.py}
-
-
 % ----------------------------------------------------------
 \subsection*{A07Q03}
 \lstinputlisting{sources/EE1054-Atividade07-Questao03-DHT.py}
-
-
+% ----------------------------------------------------------
 \subsection*{A07Q04}
 \lstinputlisting{sources/EE1054-Atividade07-Questao04-Display.py}
-
+% ----------------------------------------------------------
 
 % section considerações_finais (end)
 
 % chapter placa_raspberry_pi (end)
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% chapter 8: Placa Intel Galileo 2nd Gen.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \chapter{Placa Intel Galileo 2nd Gen.} % (fold)
-\label{cha:Placa-Intel-Galileu}
+\label{cha:8-Placa-Intel-Galileo}
 
 \section{Atividades propostas} % (fold)
-\label{sec:RPlaca-Intel-Galileu-atividades_propostas}
+\label{sec:RPlaca-Intel-Galileo-atividades_propostas}
 
 \subsection*{Relatório de experimentos – Aula prática com a placa Intel Galileo}
 
 \subsubsection*{Atividade 8}
 
 \begin{enumerate}
-  \item Instalar a ferramenta (IDE) para trabalhar com a placa Galileo e Android.
+  \item Instalar a ferramenta (IDE) para trabalhar com a placa Galileo e Arduino.
   \item Realizar testes para piscar LEDs com a placa Galileo, utilizando o LED da própria placa.
   \item Fazer um programa para gerar pulsos em um pino de saída, bem como acender um indicador (LED) ao mesmo tempo, utilizando o Shield Arduíno. Utilizar duas teclas externas uma para aumentar a velocidade das piscadas do LED e a outra para diminuir a velocidade das piscadas do LED. Pede-se o controle de velocidade de 1 a 60 piscadas.
 \end{enumerate}
 
 \section{Relatório da Atividade} % (fold)
-\label{sec:consideracoes-Placa-Intel-Galileu}
+\label{sec:consideracoes-Placa-Intel-Galileo}
+
+As atividades foram desenvolvidas no Laboratório, com a placa Intel Galileo 2nd Gen., e podemos observar sua configuração na Figura~\ref{fig:IntelGalileo}.
+
+Para desenvolvimento das atividades visitamos o site\footnote{Placas e kits Intel Galileo: \url{http://www.intel.com.br/content/www/br/pt/do-it-yourself/galileo-maker-quark-board.html}} do Intel Galileo 2nd Gen. Este ambiente proporciona uma série de ferramentas, manuais, entre outros recursos. Um exemplo de utilização da IDE para trabalhar com a placa Galileo e Arduino pode ser encontrado na Figura~\ref{fig:cha-8-IDE-GALILEO-GEN2}.
 
 Para fonte de consulta, inserimos o Diagrama de conexões da Placa Intel Galileo, como pode ser observado na Figura~\ref{fig:cha-8-diagrama-conexoes-placa-galileo}, extraída do Guia do Usuário da Placa Intel Galileo 2nd Gen. \cite{Corporation2014}.
 
@@ -1113,9 +1141,11 @@ Para fonte de consulta, inserimos o Diagrama de conexões da Placa Intel Galileo
   \includegraphics[width=0.8\textwidth]{images/Atividade08/IMG_20150721_145053115_HDR.jpg}
 \end{figure}
 
+Podemos observar o Diagrama Esquemático, com a prática realizada e códigos desenvolvidos na Figura~\ref{fig:05GalileoSchematic}.
+
 \begin{figure}[ht]
   \centering
-  \caption{\label{fig:05GalileoSchematic}Diagrama Esquemático desenvolvido para o Intel Galileo durante a Atividade~\ref{cha:Placa-Intel-Galileu}.}
+  \caption{\label{fig:05GalileoSchematic}Diagrama Esquemático desenvolvido para o Intel Galileo durante a Atividade~\ref{cha:Placa-Intel-Galileo}.}
   \fonte{Produzido pelos autores.}
   \includegraphics[width=0.8\textwidth]{images/Atividade08/05Schematic.jpg}
 \end{figure}
@@ -1136,23 +1166,21 @@ Para fonte de consulta, inserimos o Diagrama de conexões da Placa Intel Galileo
   \includegraphics[width=0.8\textwidth]{images/Atividade08/IDE-GALILEO-GEN2.png}
 \end{figure}
 
-
 \newpage
+
 Os códigos-fontes elaborados estão disponibilizados a seguir:
+
 % ----------------------------------------------------------
 \section*{Placa Intel Galileo -- A08 (Códigos-fontes)}
 \label{sec:IntelGalileo}
 % ----------------------------------------------------------
 \subsection*{A08Q02-03}
 \lstinputlisting{sources/EE1054-Atividade08-BlinkGalileo.ino}
-
+% ----------------------------------------------------------
 
 % section considerações (end)
 
 % chapter placa_intel_galileo (end)
-
-
-
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF
@@ -1173,7 +1201,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 \bibliography{library}
 %\chapter*[Referências]{Referências}
 %\addcontentsline{toc}{chapter}{Referências}
-
 
 % ----------------------------------------------------------
 % Glossário
@@ -1202,18 +1229,13 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 % \label{apendice:atmel-AT89S51}
 % % ----------------------------------------------------------
 
-
 % \lstinputlisting{sources/EE1054-Atividade02.c}
-
 
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador PIC -- A03Q02 (códigos-fontes)}
 % \label{apendice:PIC-A03Q02}
 % % ----------------------------------------------------------
 % \section*{Atividade 3, Questão 2}
-
-
-
 
 % \lstinputlisting{sources/EE1054-Atividade03-Questao02-Led.c}
 
@@ -1225,8 +1247,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % \lstinputlisting{sources/EE1054-Atividade03-Questao03-Leds-Sequencial.c}
 
-
-
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador MSP430 -- A04Q02 (códigos-fontes)}
 % \label{apendice:MSP430-A04Q02}
@@ -1234,7 +1254,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 % \section*{Atividade 4, Questão 2}
 
 % \lstinputlisting{sources/EE1054-Atividade04-Questao02-Led.c}
-
 
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador MSP430 -- A04Q03 (códigos-fontes)}
@@ -1252,7 +1271,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % \lstinputlisting{sources/EE1054-Atividade04-Questao04-Pulso.c}
 
-
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador Kinetis Freescale -- A06Q01-a (códigos-fontes)}
 % \label{apendice:Kinetis-Freescale-A06Q01-a}
@@ -1260,7 +1278,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 % \section*{Atividade 6, Questão 1-a}
 
 % \lstinputlisting{sources/EE1054-Atividade06-Questao01a-Led.cpp}
-
 
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador Kinetis Freescale -- A06Q01-b (códigos-fontes)}
@@ -1270,7 +1287,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % \lstinputlisting{sources/EE1054-Atividade06-Questao01b-Timer.cpp}
 
-
 % % ----------------------------------------------------------
 % \chapter{Microcontrolador Kinetis Freescale -- A06Q01-c (códigos-fontes)}
 % \label{apendice:Kinetis-Freescale-A06Q01-c}
@@ -1279,7 +1295,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % \lstinputlisting{sources/EE1054-Atividade06-Questao01c-Touch.cpp}
 
-
 % % ----------------------------------------------------------
 % \chapter{Placa Raspberry Pi -- A07Q02 (códigos-fontes)}
 % \label{apendice:RaspberryPi-A07Q02}
@@ -1287,7 +1302,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 % \section*{Atividade 7, Questão 2}
 
 % \lstinputlisting{sources/EE1054-Atividade07-Questao02-Print.py}
-
 
 % % ----------------------------------------------------------
 % \chapter{Placa Raspberry Pi -- A07Q03 (códigos-fontes)}
@@ -1305,13 +1319,7 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % \lstinputlisting{sources/EE1054-Atividade07-Questao04-Display.py}
 
-
 % \end{apendicesenv}
-
-
-
-% ---
-
 
 % ----------------------------------------------------------
 % Anexos
@@ -1337,8 +1345,6 @@ Os códigos-fontes elaborados estão disponibilizados a seguir:
 
 % %inserindo páginas em landscape
 % \includepdf[pages=-,landscape]{arquivo06.pdf}
-
-
 
 % \begin{anexosenv}
 
